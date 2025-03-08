@@ -16,22 +16,49 @@
 	<body>
 		<div class="background">
 			<section class="slotMachineBox">
-				<h1>Slot Machine</h1>
+				<h1><img src="dbz.png" alt=""></h1>
 				<div class="row1">
-						<div id="num1Box"><img src="" alt="" id="num1"></div>
-					<div id="num2Box"><img src="" alt="" id="num2"></div>
-					<div id="num3Box"><img src="" alt="" id="num3"></div>
-					
-					
-					
+					<div class="numBox"><img src="images/question.png" alt="" id="num1" class="fighter"></div>
+					<div class="numBox"><img src="images/question.png" alt="" id="num2" class="fighter"></div>
+					<div class="numBox"><img src="images/question.png" alt="" id="num3" class="fighter"></div>
+					<img src="kame.gif" alt="" id="rowOneWin" class="kame hidden">
 				</div>
 				<div class="row2">
-					<button id="min">Min</button>
-					<button id="max">Max</button>
-					<p class='bank'>Bank: $<span id="bankAmount"></span></p>
+					<div class="numBox"><img src="images/question.png" alt="" id="num4" class="fighter"></div>
+					<div class="numBox"><img src="images/question.png" alt="" id="num5" class="fighter"></div>
+					<div class="numBox"><img src="images/question.png" alt="" id="num6" class="fighter"></div>
+					<img src="kame.gif" alt="" id="rowTwoWin" class="kame hidden">
+					<img src="kame.gif" alt="" id="crossOneWin" class="kame hidden crossOne">
+					<img src="kame.gif" alt="" id="crossTwoWin" class="kame hidden crossTwo">
 				</div>
+				<div class="row3">
+					<div class="numBox"><img src="images/question.png" alt="" id="num7" class="fighter"></div>
+					<div class="numBox"><img src="images/question.png" alt="" id="num8" class="fighter"></div>
+					<div class="numBox"><img src="images/question.png" alt="" id="num9" class="fighter"></div>
+					<img src="kame.gif" alt="" id="rowThreeWin" class="kame hidden">
+		
+				</div>	
+				
+				
+				
 
 			</section>
+			<div class="row4">
+				<div class="balls">
+					<div>
+						<img src="ball1.png" alt="" class="db" id="min">
+						<h6>MIN</h6>
+					</div>
+					<div>
+						<img src="ball7.png" class="db" alt=""id="max">
+						<h6>MAX</h6>
+					</div>
+				</div>
+						
+					<img src="youlose1.png" alt="" id="youLose" class="hidden msg">
+					<img src="youwin1.png" alt="" id="youWin" class="hidden msg">
+					<p class='bank'><span id="bankAmount"></span></p>
+			</div>
 		</div>
 
 		<script type="text/javascript" src="js/main.js"></script>
